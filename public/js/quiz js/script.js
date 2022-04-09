@@ -114,7 +114,7 @@ questionIndex++;
 
 function check(choice) {
 
-  // question 1
+  // question 1 --------------------
   if (choice == "Newb-Alert") {
     entScore++;
   } else {
@@ -123,7 +123,7 @@ function check(choice) {
     polScore++;
   }
 
-  // question 2
+  // question 2 --------------------
   if (choice == "Anything Stephen King") {
     truScore++;
   }
@@ -137,7 +137,7 @@ function check(choice) {
     spoScore++;    
   }
 
-  // Question 3
+  // Question 3 --------------------
   if (choice == "Goodnight, and Good Luck") {
     polScore++;    
   }
@@ -152,7 +152,7 @@ function check(choice) {
 
   }
 
-  // Question 4
+  // Question 4 --------------------
   if (choice == "New Girl") {
     entScore++;
   }
@@ -166,7 +166,7 @@ function check(choice) {
     polScore++;    
   }
 
-  // Question 5
+  // Question 5 --------------------
   if (choice == "Literature/ Theatre") {
     entScore++;
   }
@@ -180,7 +180,7 @@ function check(choice) {
     polScore++;  
   }
 
-  // Question 6
+  // Question 6 --------------------
   if (choice == "Educators/ Politicians") {
     polScore++;  
   }
@@ -194,7 +194,7 @@ function check(choice) {
     spoScore++; 
   }
 
-  // Question 7
+  // Question 7 --------------------
   if (choice == "Movie theatre") {
     entScore++;
   }
@@ -202,7 +202,7 @@ function check(choice) {
     spoScore++; 
   }
 
-  // Question 8
+  // Question 8 --------------------
   if (choice == "Museum") {
     polScore++;  
   }
@@ -210,7 +210,7 @@ function check(choice) {
     truScore++;
   }
 
-  // Question 9
+  // Question 9 --------------------
   if (choice == "Light Hearted") {
     spoScore++; 
     entScore++;
@@ -219,8 +219,8 @@ function check(choice) {
     truScore++;
     polScore++;  
   }
-  console.log(`truescore: ${truScore}`);
-  console.log(`truescore: ${polScore}`);
+  console.log(`truScore: ${truScore}`);
+  console.log(`polScore: ${polScore}`);
   console.log(`spoScore: ${spoScore}`);
   console.log(`entScore: ${entScore}`);
 }
@@ -243,11 +243,9 @@ function endquiz() {
 }
 
 function saveScore() {
-  var initials = initialsEl.value.trim();
 
   // make sure value wasn't empty
   if (initials !== "") {
-    // get saved scores from localstorage, or if not any, set to empty array
     var highscores =
       JSON.parse(window.localStorage.getItem("highscores")) || [];
 
@@ -262,7 +260,7 @@ function saveScore() {
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
     // redirect to next page
-    window.location.href = "highscores.html";
+    // window.location.href = "highscores.html";
   }
 }
 
