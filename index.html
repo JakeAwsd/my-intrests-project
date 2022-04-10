@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyInterests or MyPodcastSpace</title>
+  <link rel="stylesheet" href="./public/css/jass.css">
+  <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<div class="header-img"><img src="./images/podcast-image.jpg" alt="microphone" style="
+  height: 400px;">
+</div>
+<nav class="navbar">
+  <a href="#profile"><h5>Profile</h5></a>
+  <a href="#quiz"><h5>Quiz</h5></a>
+  <a href="#logout"><h5>Log Out</h5></a>
+</nav>
+<body>
+<main id="main-holder">
+  <h1 id="login-header">Welcome to MyPodcastSpace</h1>
+<div id="login-error-msg-holder">
+  <p id="login-error-msg">Invalid Username <span id="error-msg-second-line">and/or Password</span></p>
+</div>
+<form id="login-form">
+  <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+  <input type="mail" name="email" id="#email-login" class="login-form-field" placeholder="Email">
+  <input type="password" name="password" id="#password-login" class="login-form-field" placeholder="Password">
+  <input type="submit" value="Login" id="login-form-submit">
+  <p>Don't have an account? <a href="#">Create your account here</a></p>
+</form>
+<form id="signup-form">
+<input type="mail" name="email" id="email-field" class="signup-form-field" placeholder="Enter Email Here">
+<input type="password" name="password" id="password-field" class="signup-form-field" placeholder="Enter Password Here">
+<input type="password" name="password" id="password-field" class="signup-form-field" placeholder="Repeat Password Here">
+<input type="submit" value="Create" id="signup-form-submit">
+</form>
+<br>
+</main>
+<div class="container">
+  <header>
+  <div class="logo">
+    <h3>Our Website Name/ MyPodcastSpace</h3>
+  </div>
+  <div class="bars">
+    <span><i class="fa fa-bars"></i></span>
+  </div>
+  <div class="nav">
+    <ul>
+      <li>
+    <a href="#profile"><h7>Profile</h7></a>
+  </li>
+  <li>
+    <a href="#quiz"><h7>Quiz</h7></a>
+  </li>
+  <li>
+    <a href="#results"><h7>Results</h7></a>
+  </li>
+  <li>
+    <a href="#logout"><h7>Log Out</h7></a>
+  </li>
+  </ul>
+  </div>
+</header>
+</div>
+<div id="questions" class="hide"></div>
+<h2 id="question-title"></h2>
+<div id="choices" class="choices"></div>
+</div>
+<script src="./public/js/login.js"></script>
+<script src="./public/js/logout.js"></script>
+<script src="./public/js/questions.js"></script>
+<footer>
+  <a href="#quiz"><h5>Quiz</h5></a>
+</footer>
+</body>
+</html>
