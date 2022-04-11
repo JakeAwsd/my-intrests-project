@@ -75,22 +75,22 @@ function retrieveQuestion() {
 function guess(choice) {
   // console.log(questions[questionIndex].answer);
   // console.log(this.value);
-  if (choice !== questions[questionIndex].answer) {
-// Subtracts time for getting an answer wrong
-    timeLeft -= 15;
+//   if (choice !== questions[questionIndex].answer) {
+// // Subtracts time for getting an answer wrong
+//     timeLeft -= 15;
 
-    if (timeLeft <= 0) {
-      timeLeft = 0;
-    }
+//     if (timeLeft <= 0) {
+//       timeLeft = 0;
+//     }
 
-    timerEl.textContent = "Time: " + timeLeft;
+//     timerEl.textContent = "Time: " + timeLeft;
 
-    // feedbackEl.textContent = "wrong!";
-    // console.log("wrong!");
-  } else {
-    // feedbackEl.textContent = "Correct!";
-    // console.log("Correct!");
-  }
+//     // feedbackEl.textContent = "wrong!";
+//     // console.log("wrong!");
+//   } else {
+//     // feedbackEl.textContent = "Correct!";
+//     // console.log("Correct!");
+//   }
 
 // feedbackEl.setAttribute("class", "divider");
 
@@ -233,7 +233,16 @@ function endquiz() {
   endScreenEl.removeAttribute("class");
 
   var finalScoreEl = document.getElementById("intrest");
-  finalScoreEl.textContent = truScore;
+  // finalScoreEl.textContent = truScore;
+  if (truScore > entScore || truScore > spoScore || truScore > polScore) {
+    finalScoreEl.textContent = "True Crime";
+  } else if (entScore > truScore || entScore > spoScore || entScore > polScore) {
+    finalScoreEl.textContent = "Entertainment";    
+  } else if(spoScore) {
+    finalScoreEl.textContent = "Politics";       
+  } else if(spoScore) {
+    finalScoreEl.textContent = "Crime";           
+  }
 
     // hide questions section
     var questionsEl = document.getElementById("questions");

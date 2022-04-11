@@ -1,7 +1,6 @@
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
   background-color: #313552;
-
 }
 
 .no-button {
@@ -145,9 +144,11 @@ button:hover {
       display: block;
   }
 }
+
 .take_quiz {
   background: #313552;
 }
+
 .results_quiz {
   background: #313552;
 }
