@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { Client } = require('podcast-api');
 
 //
@@ -7,20 +9,25 @@ const { Client } = require('podcast-api');
 // To get an apiKey to fetch real data, please visit:
 //     https://www.listennotes.com/api/pricing/
 //
-const client = Client({ apiKey: null });
+const client = Client({ apiKey: process.env.API_KEY });
 
+function createPodcastRecs(score){
 client.search({
-  q: 'star wars',
+  q: score.category,
   sort_by_date: 0,
-  type: 'episode',
-  genre_ids: '68,82',
+  type: 'podcast',
+  genre_ids: score.genreids,
   only_in: 'title,description',
   language: 'English',
 }).then((response) => {
   // Get response json data here
-  console.log(response.data);
+  let podcastData = (response.data);
+  return podcastData
 }).catch((error) => {
   console.log(error)
 });
+};
 
 // Click "▶ run" to try this code live.
+
+module.exports = {createPodcastRecs}
