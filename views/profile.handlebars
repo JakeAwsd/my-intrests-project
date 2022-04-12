@@ -47,6 +47,9 @@
 
 <script src="./js/profile.js"></script> --}}
 
+
+
+
 <body>
   <div class="container justify-content-center">
     <div class="card rounded">
@@ -54,9 +57,17 @@
             <div class="area1 p-3 py-5"> </div>
             <div class="area2 p- text-center px-3">
 
- <form action="/profile" method="post" enctype="multipart/form-data">
-  <input type="file" name="avatar" />
-</form>
+
+<div class="container">
+        <h1>File Upload</h1>
+        <form id='form'>
+ <div class="input-group">
+                <label for='files'>Select files</label>
+                <input id='files' type="file" multiple>
+            </div>
+            <button class="submit-btn" type='submit'>Upload</button>
+        </form>
+    </div>
                 <div class="image mr-3"> <img src="" class="rounded-circle" width="100" />
                  <h3 class="name mt-3">{{name}}'s</h3>
                  <h4 class="user_name mt-3">Amazing Profile</h4>
