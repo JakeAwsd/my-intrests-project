@@ -31,3 +31,22 @@ client.search({
 // Click "▶ run" to try this code live.
 
 module.exports = {createPodcastRecs}
+
+// let createPodcastRecs = require('./podcast_apiTEST.js')
+
+// function getPodCastData(){
+//   if(score){
+//     let podcastRecs = []
+//     let podcastData = createPodcastRecs(score);
+//     for (let i = 0; i < 4; index++) {
+//       podcastRecs.push(podcastData[i]);
+//       }
+//   }else{
+//     alert("You haven't set your preferences yet. Would you like to do so?")
+//   }
+// }
+
+//If this works as intended, podcastRecs will be an array of objects passed in from the API call, and the podcast.handlebars partial can use each object's parameters in constructing
+//the HTML
+
+//podcastRecs[1].name, podcastRecs[1].description, etc.
