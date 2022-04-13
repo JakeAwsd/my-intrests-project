@@ -35,7 +35,7 @@ header, .project:not(:last-child) {
 } */
 
 body {
-  background-color: #EEE6CE;
+  background-color: #F4998D; /* #DBCFB0; /* #C2D3CD /* #EAD7D7 /* #B59194; /* #BF8B85; /* #DABECA; /* #D8A48F /* #EDD3C4; /*  #D5CAD6;   /* #EAEAEA; /* #EEE6CE; */
 }
 
 button {
@@ -62,7 +62,6 @@ button:hover {
 .start button {
   display: flex;
   justify-content: center;
-  margin: auto;
 }
 
 .hide {
@@ -103,7 +102,7 @@ button:hover {
 }
 
 .area1 {
-  background-color: #2EB086;
+  background-color: #79B791; /* #5DA271; /* #2EB086; */
   border-top-left-radius: 14px !important;
   border-top-right-radius: 14px !important;
   padding-top: 83px !important;

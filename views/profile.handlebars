@@ -27,11 +27,11 @@
     </form>
   </div>
 
-  {{#if projects.length}}
+  {{#if podcasts.length}}
   <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
+    <h3>Recommended Podcasts:</h3>
 
-    {{#each projects as |project|}}
+    {{#each podcasts as |podcast|}}
     <div class="row mb-2">
       <div class="col-md-8">
         <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
@@ -57,6 +57,7 @@
             <div class="area1 p-3 py-5"> </div>
             <div class="area2 p- text-center px-3">
 
+<<<<<<< HEAD
 
 <div class="container">
         <h1>File Upload</h1>
@@ -68,14 +69,20 @@
             <button class="submit-btn" type='submit'>Upload</button>
         </form>
     </div>
+=======
+<form action="/profile" method="post" enctype="multipart/form-data">
+<input type="file" name="avatar"/>
+<button type="submit">Submit</button>
+</form>
+>>>>>>> 6850fb4422a7d216386f3d2ef247ccdeb19880fb
                 <div class="image mr-3"> <img src="" class="rounded-circle" width="100" />
                  <h3 class="name mt-3">{{name}}'s</h3>
                  <h4 class="user_name mt-3">Amazing Profile</h4>
             <p class="information mt-3 text-justify">Quiz Results/ Your podcast subject/ genre here</p>
             <div class="d-flex justify-content-center mt-5">
                <ul class="list-quiz">
-                 <li class="take_quiz"> <i class="fa fa-quiz"> <button class="btn quiz-button btn-block">Quiz</button></i></li>
-                 <li class="results_quiz" <i class="fa fa-results"> <button class="btn quiz-button btn-block">Results</button></i></li>
+                 <li class="take_quiz"> <i class="fa fa-quiz"> <button class="btn quiz-button btn-block" style="background-color:  #313552; color: white; border-radius: 5px; padding: 3px; margin-bottom: 4px; display: flex; flex-direction: column; width: fit-content;">Quiz</button></i></li>
+                 <li class="results_quiz" <i class="fa fa-results"> <button class="btn quiz-button btn-block" style="background-color:  #313552; color: white; border-radius: 5px; padding: 3px; margin-bottom: 4px; display: flex; flex-direction: column; width: fit-content;">Results</button></i></li>
                </ul>
             </div>
           </div>
@@ -84,5 +91,5 @@
   </div>
 </div>
 </div>
-</body>
-</html>
+
+<script src="../public/js/profile.js"></script>
