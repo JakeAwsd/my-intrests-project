@@ -13,7 +13,7 @@ J Meeks, Graeme Montrose & Erin Jordan collaboration of Project 2 for Denver Uni
 ## Contact
 * <a href= "https://jakemeeks21@gmail.com">J Meeks Email</a> <br>
 * <a href= "https://teentrose@gmail.com">Grame Montrose Email</a> <br>
-* <a href= "https://erinjordan2790@gmail.com">Erin Jordan email</a> <br>
+* <a href= "https://erinjordan2790@gmail.com">Erin Jordan Email</a> <br>
 
 ## Coding
 * HTML/ CSS
