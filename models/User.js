@@ -28,8 +28,8 @@ User.init(
         isEmail: true,
       },
     },
-    // picture: {
-    //   type: DataTypes.IMAGE,
+    // avatar: {
+    //   type: DataTypes.BLOB("long"),
     // },
     password: {
       type: DataTypes.STRING,
