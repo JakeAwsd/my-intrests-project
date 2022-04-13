@@ -75,7 +75,7 @@ var questions = [
     answer: "",
 },
 {
-    title: "Light Hearted <------ Scale Here ------> Serious",
+    title: "Light Hearted or Serious?",
     choices: [
       "Light Hearted", 
       "Serious"

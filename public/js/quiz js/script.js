@@ -238,10 +238,10 @@ function endquiz() {
     finalScoreEl.textContent = "True Crime";
   } else if (entScore > truScore && entScore > spoScore && entScore > polScore) {
     finalScoreEl.textContent = "Entertainment";    
-  } else if(spoScore) {
-    finalScoreEl.textContent = "Politics";       
-  } else if(spoScore) {
-    finalScoreEl.textContent = "Crime";           
+  } else if(spoScore > entScore || spoScore > polScore || spoScore > truScore) {
+    finalScoreEl.textContent = "Sports";       
+  } else if(polScore > spoScore || polScore > entScore || polScore > truScore) {
+    finalScoreEl.textContent ="Politics";           
   }
 
     // hide questions section

@@ -52,13 +52,11 @@
 
     <div class="card rounded">
 
-      <div class=" d-block justify-content-center">
+        <div class=" d-block justify-content-center">
+            <div class="area1 p-3 py-5"> <h3 class="name mt-3">{{name}}</h3> </div>
+            <div class="area2 p- text-center px-3">
 
-        <div class="preview-images area1 p-3 py-5"> </div>
-        
-          <div class="area2 p- text-center px-3">
-
-      <form 
+              {{!-- <form 
       action="/upload" 
       method="POST" 
       enctype="multipart/form-data"
@@ -77,44 +75,45 @@
 
       </form>
 
-          <div class="image mr-3"> <img src="" class="rounded-circle" width="100" />
 
-            <h3 class="name mt-3">{{name}}'s</h3>
-
-              <h4 class="user_name mt-3">Amazing Profile</h4>
-
-          <div class="container">
-
-                <h1>File Upload</h1>
-
-                <form id='form'>
-
-          <div class="input-group">
-
+<div class="container">
+        <h3 style="color: #002651;">File Upload</h3>
+        <form id='form'>
+ <div class="input-group">
                 <label for='files'>Select files</label>
                 <input id='files' type="file" multiple>
             </div>
-            
+            <br>
             <button class="submit-btn" type='submit'>Upload</button>
             
         </form>
-    </div>
+    </div> --}}
 
-
+{{!-- 
                 <div class="image mr-3"> <img src="" class="rounded-circle" width="100" />
                  <h3 class="name mt-3">{{name}}'s</h3>
-                 <h4 class="user_name mt-3">Amazing Profile</h4>
+                 <h4 class="user_name mt-3">Amazing Profile</h4> --}}
 
-            <p class="information mt-3 text-justify">Quiz Results/ Your podcast subject/ genre here</p>
+            {{!-- <p class="information mt-3 text-justify">Quiz Results/ Your podcast subject/ genre here</p>
 
-            <div class="d-flex justify-content-center mt-5">
+            <div class="d-flex justify-content-center mt-5"> --}}
+{{!-- 
+               <ul class="list-quiz"> --}}
+                   
+                 <img src="./images/image1.jpg" alt="Image 1" width="30%" height="15%" style="float: center; border-radius: 50px; padding: 25px;"/>
+                 {{!-- <br> --}}
+                 <a href="/quiz"><btn type="quiz"></btn><img src="./images/image3.jpg" alt="Image 2" width="30%" height="15%" style="float: center; border-radius: 50px; padding: 25px;"/></button></a>
+         
+                  <img src="./images/image7.jpg" alt="Image 3" width="30%" height="15%" style="float: center; border-radius: 50px; padding: 25px;"/>
 
-               <ul class="list-quiz">
+                  <p style="color: #002651; font-weight: bold; font-size: 22px;">Click 'You are what You listen to' and Start the Quiz!</p>
+                   {{!-- <a href="/quiz"><button type="quiz">Quiz</button></a> --}}
+                {{!-- <a href="/quiz"><button type="quiz" <a href="/quiz">Quiz</button></a> --}}
+                
 
-                 <li class="take_quiz"> <i class="fa fa-quiz"> <button class="btn quiz-button btn-block" style="background-color:  #313552; color: white; border-radius: 5px; padding: 3px; margin-bottom: 4px; display: flex; flex-direction: column; width: fit-content;">Quiz</button></i></li>
-                 <li class="results_quiz" <i class="fa fa-results"> <button class="btn quiz-button btn-block" style="background-color:  #313552; color: white; border-radius: 5px; padding: 3px; margin-bottom: 4px; display: flex; flex-direction: column; width: fit-content;">Results</button></i></li>
 
-               </ul>
+                 
+               {{!-- </ul> --}}
 
             </div>
 
@@ -126,7 +125,7 @@
 
   </div>
 
-</div>
+{{!-- </div> --}}
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./js/profile.js"></script>
