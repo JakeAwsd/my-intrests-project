@@ -33,7 +33,7 @@ var questions = [
     choices: [
     "New Girl", 
     "Criminal Minds", 
-    "Winning Time: The Rise of the Lakers Dynasty", 
+    "Friday Night Lights", 
     "Scandal"
   ],
   answer: "",
