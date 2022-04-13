@@ -1,7 +1,7 @@
 # my-intrests-project
 
 ## Description
-J Meeks, Graeme Montrose & Erin Jordan collaboration for Project 2 of Denver University Coding Bootcamp
+J Meeks, Graeme Montrose & Erin Jordan collaboration of Project 2 for Denver University Coding Bootcamp
 * website url here
 
 ## Table of Contents
