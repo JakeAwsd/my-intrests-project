@@ -87,3 +87,17 @@ $(document).ready(function() {
     imagesPreview(this, "div.preview-images");
   });
 });
+
+var myHeaders = new Headers();
+myHeaders.append("X-ListenAPI-Key", "mollit");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://cors-du-jsm.herokuapp.com/https://listen-api-test.listennotes.com/api/v2/search?q=star wars&sort_by_date=0&type=episode&offset=0&len_min=10&len_max=30&episode_count_min=-74947492&episode_count_max=-74947492&genre_ids=68,82&published_before=1580172454000&published_after=0&only_in=title,description&language=English&region=&ocid=mollit&ncid=mollit&safe_mode=0", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));

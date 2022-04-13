@@ -234,9 +234,9 @@ function endquiz() {
 
   var finalScoreEl = document.getElementById("intrest");
   // finalScoreEl.textContent = truScore;
-  if (truScore > entScore || truScore > spoScore || truScore > polScore) {
+  if (truScore > entScore && truScore > spoScore && truScore > polScore) {
     finalScoreEl.textContent = "True Crime";
-  } else if (entScore > truScore || entScore > spoScore || entScore > polScore) {
+  } else if (entScore > truScore && entScore > spoScore && entScore > polScore) {
     finalScoreEl.textContent = "Entertainment";    
   } else if(spoScore) {
     finalScoreEl.textContent = "Politics";       

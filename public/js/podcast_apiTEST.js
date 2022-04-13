@@ -2,7 +2,6 @@ require('dotenv').config();
 
 const { Client } = require('podcast-api');
 
-//
 // If apiKey is null, then we will connect to a mock server
 // that returns fake data for testing purposes.
 //

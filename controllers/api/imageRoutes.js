@@ -3,13 +3,13 @@ const { Image } = require('../../models');
 const upload = require('../../utils/upload');
 const uploadController = require("../upload");
 
-// router.post("/upload", upload.single("file"), uploadController.uploadFiles);
+router.post("/upload", upload.single("file"), uploadController.uploadFiles);
 
 router.post('/upload', async (req, res) => {
     try {
       const userData = await upload.single("file");
       uploadController.uploadFiles;
-
+      console.log('imageRoutes')
       req.session.save(() => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
