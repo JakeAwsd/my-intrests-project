@@ -1,72 +1,89 @@
-const newFormHandler = async (event) => {
-  event.preventDefault();
+// const newFormHandler = async (event) => {
+//   event.preventDefault();
 
-  const name = document.querySelector('#project-name').value.trim();
-  const needed_funding = document.querySelector('#project-funding').value.trim();
-  const description = document.querySelector('#project-desc').value.trim();
+//   const name = document.querySelector('#project-name').value.trim();
+//   const needed_funding = document.querySelector('#project-funding').value.trim();
+//   const description = document.querySelector('#project-desc').value.trim();
+
+//   if (name && needed_funding && description) {
+//     const response = await fetch(`/api/projects`, {
+//       method: 'POST',
+//       body: JSON.stringify({ name, needed_funding, description }),
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//     });
+
+//     if (response.ok) {
+//       document.location.replace('/profile');
+//     } else {
+//       alert('Failed to create project');
+//     }
+//   }
+// };
+
+// const delButtonHandler = async (event) => {
+//   if (event.target.hasAttribute('data-id')) {
+//     const id = event.target.getAttribute('data-id');
+
+//     const response = await fetch(`/api/projects/${id}`, {
+//       method: 'DELETE',
+//     });
+
+//     if (response.ok) {
+//       document.location.replace('/profile');
+//     } else {
+//       alert('Failed to delete project');
+//     }
+//   }
+// };
+
+// const uploadButtonHandler = async (event) => {
+//   const response = await fetch(`/api/single`, {
+//     method: 'POST',
+//     body: JSON.stringify({ avatar }),
+//     headers: {
+//       'Content-Type': 'multipart/form-data',
+//     },
+//   });
+
+//   if (response.ok) {
+//     document.location.replace('/');
+//   } else {
+//     alert('Failed to upload image');
+//   }
+
+// };
+
+// const form = document.getElementById("form");
+
+// form.addEventListener("submit", uploadButtonHandler);
 
 
-  if (name && needed_funding && description) {
-    const response = await fetch(`/api/projects`, {
-      method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+// // document
+// //   .querySelector('.new-project-form')
+// //   .addEventListener('submit', newFormHandler);
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to create project');
+// // document
+// //   .querySelector('.project-list')
+// //   .addEventListener('click', delButtonHandler);
+
+$(document).ready(function() {
+  let imagesPreview = function(input, placeToInsertImagePreview) {
+    if (input.files) {
+      let filesAmount = input.files.length;
+      for (i = 0; i < filesAmount; i++) {
+        let reader = new FileReader();
+        reader.onload = function(event) {
+          $($.parseHTML("<img>"))
+            .attr("src", event.target.result)
+            .appendTo(placeToInsertImagePreview);
+        };
+        reader.readAsDataURL(input.files[i]);
+      }
     }
-  }
-};
-
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-
-    const response = await fetch(`/api/projects/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete project');
-    }
-  }
-};
-
-const form = document.getElementById("form");
-
-form.addEventListener("submit", submitForm);
-
-function submitForm(e) {
-    e.preventDefault();
-    const name = document.getElementById("name");
-    const files = document.getElementById("files");
-    const formData = new FormData();
-    formData.append("name", name.value);
-    for(let i =0; i < files.files.length; i++) {
-            formData.append("files", files.files[i]);
-    }
-    fetch("http://localhost:5000/upload_files", {
-        method: 'POST',
-        body: formData,
-        headers: {
-          "Content-Type": "multipart/form-data"
-        }
-    })
-        .then((res) => console.log(res))
-        .catch((err) => ("Error occured", err));
-}
-
-document
-  .querySelector('.new-project-form')
-  .addEventListener('submit', newFormHandler);
-
-document
-  .querySelector('.project-list')
-  .addEventListener('click', delButtonHandler);
+  };
+  $("#input-files").on("change", function() {
+    imagesPreview(this, "div.preview-images");
+  });
+});

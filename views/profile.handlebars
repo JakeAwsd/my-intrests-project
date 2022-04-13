@@ -47,32 +47,58 @@
 
 <script src="./js/profile.js"></script> --}}
 
-<body>
   <div class="container justify-content-center">
     <div class="card rounded">
-        <div class=" d-block justify-content-center">
-            <div class="area1 p-3 py-5"> </div>
-            <div class="area2 p- text-center px-3">
+      <div class=" d-block justify-content-center">
+        <div class="preview-images area1 p-3 py-5"> </div>
+          <div class="area2 p- text-center px-3">
 
-<form action="/profile" method="post" enctype="multipart/form-data">
-<input type="file" name="avatar"/>
-<button type="submit">Submit</button>
-</form>
-                <div class="image mr-3"> <img src="" class="rounded-circle" width="100" />
-                 <h3 class="name mt-3">{{name}}'s</h3>
-                 <h4 class="user_name mt-3">Amazing Profile</h4>
+      <form 
+      action="/upload" 
+      method="POST" 
+      enctype="multipart/form-data"
+      >
+
+        <input 
+        type="file" 
+        name="avatar" 
+        id="input-files" 
+        class="form-control-file border"
+        />
+<div class="preview-images"></div>
+        <button type="submit">Submit</button>
+
+      </form>
+
+          <div class="image mr-3"> <img src="" class="rounded-circle" width="100" />
+
+            <h3 class="name mt-3">{{name}}'s</h3>
+
+              <h4 class="user_name mt-3">Amazing Profile</h4>
+
             <p class="information mt-3 text-justify">Quiz Results/ Your podcast subject/ genre here</p>
+
             <div class="d-flex justify-content-center mt-5">
+
                <ul class="list-quiz">
+
                  <li class="take_quiz"> <i class="fa fa-quiz"> <button class="btn quiz-button btn-block">Quiz</button></i></li>
+
                  <li class="results_quiz" <i class="fa fa-results"> <button class="btn quiz-button btn-block">Results</button></i></li>
+
                </ul>
+
             </div>
+
           </div>
-          <div> </div>
-      </div>
+
+        </div>
+
+    </div>
+
   </div>
-</div>
+
 </div>
 
-<script src="../public/js/profile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./js/profile.js"></script>
