@@ -40,7 +40,8 @@ J Meeks, Graeme Montrose & Erin Jordan collaboration for Project 2 of Denver Uni
 * Then I can take the personality quiz again and my new results are saved
 
 ## Screenshot/Video
-![Screenshot1](https://user-images.githubusercontent.com/92272866/163078904-7e15f953-d8da-4b0c-9060-27e4c880391a.png)
-![Screenshot2](https://user-images.githubusercontent.com/92272866/163078927-078bdc8f-b3c0-4a01-8ed6-1214a51f58e0.png)
-![Screenshot3](https://user-images.githubusercontent.com/92272866/163078941-7089c6b1-26d0-4cb9-95fe-07eed7ec65bb.png)
-![Screenshot4](https://user-images.githubusercontent.com/92272866/163078951-beb79f8b-0600-461a-afd0-ba0fbf1a7b40.png)
+![Screenshot1](https://user-images.githubusercontent.com/92272866/163082578-6dab1339-d656-4fb7-ba76-88df608c59a8.png)
+![Screenshot2](https://user-images.githubusercontent.com/92272866/163082590-ad248379-364c-40c4-a20f-d0d7fbcd7a19.png)
+![Screenshot3](https://user-images.githubusercontent.com/92272866/163082608-542c91a9-89c1-4df4-baa4-2639a09665ea.png)
+![Screenshot4](https://user-images.githubusercontent.com/92272866/163082619-53408f90-eabf-4e91-bfa5-36dd14f02804.png)
+
