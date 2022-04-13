@@ -1,6 +1,6 @@
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
-  background-color: #313552;
+  background-color: #002651; /* #303481; /* #233B6E; /* #313552; */
 }
 
 .no-button {
@@ -30,23 +30,25 @@ header, .project:not(:last-child) {
   justify-content: center;
 }
 
+
 /* .bigtitle {
 
 } */
 
 body {
-  background-color: #F4998D; /* #DBCFB0; /* #C2D3CD /* #EAD7D7 /* #B59194; /* #BF8B85; /* #DABECA; /* #D8A48F /* #EDD3C4; /*  #D5CAD6;   /* #EAEAEA; /* #EEE6CE; */
+  background-color: #ACB0BD; /* #B0B2B8;/* #C8BFC7; /* #A7BED3;/* #B1C1C0; /* #EAD7D7   /* #C2D3CD /* #DBCFB0; /* #F4998D; /* #EAD7D7 /* #B59194; /* #BF8B85; /* #DABECA; /* #D8A48F /* #EDD3C4; /*  #D5CAD6;   /* #EAEAEA; /* #EEE6CE; */
 }
 
 button {
-  background-color: #313552;
-  color: white;
+  background-color: #002651; /* #303481; /* #233B6E; /* #313552; */
+  color: #EBEBEB;  /* rgb(255, 255, 255); */
   border-radius: 5px;
-  padding: 3px;
-  margin-bottom: 4px;
-  display: flex;
-  flex-direction: column;
+  padding: 6px;
+  margin-bottom: 8px;
+  /* display: flex;
+  flex-direction: column; */
   width: fit-content;
+  font-size: 18px;
 }
 
 a:link {
@@ -55,7 +57,7 @@ a:link {
 
 button:hover {
   background-color: #1b89bc;;
-  color: white;
+  color: #EBEBEB; 
   border-radius: 5px; 
 }
 
@@ -102,20 +104,24 @@ button:hover {
 }
 
 .area1 {
-  background-color: #79B791; /* #5DA271; /* #2EB086; */
+  background-color: #64B6AC; /* #79B791; /* #5DA271; /* #2EB086; */
+  color: #EBEBEB; /* #EFF0F4; */
   border-top-left-radius: 14px !important;
   border-top-right-radius: 14px !important;
-  padding-top: 83px !important;
+  padding-top: 33px !important;
+  padding-bottom: 33px !important;
+  text-align: center;
 }
 
 .area2 {
-  background-color: #fff;
+  background-color: #EBEBEB; /* #EFF0F4; /* #fff; */
+  color: #002651; /* #233B6E; /* #313552; */
   border-bottom-left-radius: 14px !important;
   border-bottom-right-radius: 14px !important;
 }
 
 .name {
-  font-size: 25px;
+  font-size: 43px;
   font-weight: 650;
 }
 
@@ -149,9 +155,9 @@ button:hover {
 }
 
 .take_quiz {
-  background: #313552;
+  background: #002651; /* #233B6E; /* #313552; */
 }
 
 .results_quiz {
-  background: #313552;
+  background: #002651; /* #233B6E; /* #313552; */
 }
