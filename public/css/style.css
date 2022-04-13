@@ -80,6 +80,7 @@ button:hover {
 }
 
 .questionArea {
+  color: #002651;
   margin: auto;
   width: 50%;
   font-size: 30px;
@@ -89,6 +90,10 @@ button:hover {
   float: center;
 }
 
+.end-screen {
+  color: #EBEBEB;
+
+}
 .divider {
   border-top: 3px solid rgb(138, 138, 138);
   font-style: italic;
