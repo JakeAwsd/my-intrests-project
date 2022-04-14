@@ -99,5 +99,19 @@ var requestOptions = {
 
 fetch("https://cors-du-jsm.herokuapp.com/https://listen-api-test.listennotes.com/api/v2/search?q=star wars&sort_by_date=0&type=episode&offset=0&len_min=10&len_max=30&episode_count_min=-74947492&episode_count_max=-74947492&genre_ids=68,82&published_before=1580172454000&published_after=0&only_in=title,description&language=English&region=&ocid=mollit&ncid=mollit&safe_mode=0", requestOptions)
   .then(response => response.text())
-  .then(result => console.log(result))
+  .then(data => console.log(JSON.parse(data).results[1]))
+  .then(data => appendData(JSON.parse(data)))
   .catch(error => console.log('error', error));
+
+// const para = document.createElement("p");
+// para.innerHTML = '<img src="./images/image7.jpg" alt="Image 3" width="30%" height="15%" style="float: center; border-radius: 50px; padding: 25px;"/>';
+// document.getElementById("displayResults").appendChild(para);
+
+function appendData(data) {
+  var mainContainer = document.getElementById("displayResults");
+  for (var i = 0; i < 10; i++) {
+    var div = document.createElement("p");
+    para.innerHTML = `<img src="${data.results[1]}" width="30%" height="15%" style="float: center; border-radius: 50px; padding: 25px;"/>`;
+    mainContainer.appendChild(div);
+  }
+}
